@@ -55,3 +55,7 @@ alias wallpick='bash ~/.config/fish/functions/preview-and-set-wall.sh'
 #for termux in android#
 #######################
 
+# ffmpeg aliases
+alias ffu='wget https://raw.githubusercontent.com/mahdi19970107/MyCodeTools/refs/heads/main/ffmpeg_script.py -O "/storage/emulated/0/Pictures/Hik-Connect Album/ffmpeg_script.py" --show-progress'
+alias ffc='cd storage/emulated/0/Pictures/Hik-Connect\ Album/'
+alias ffm='python /storage/emulated/0/Pictures/Hik-Connect\ Album/ffmpeg_script.py'
