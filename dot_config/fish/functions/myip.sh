@@ -19,6 +19,3 @@ function myip
   🏙️ City: $city
   🛰️ ISP: $isp"
 end
-
-
-alias wallpick='bash ~/.config/fish/functions/preview-and-set-wall.sh'

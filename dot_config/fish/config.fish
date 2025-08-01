@@ -17,5 +17,4 @@ fish_add_path /home/mehdi/.spicetify
 zoxide init fish | source
 thefuck --alias | source
 #####
-source ~/.config/fish/conf.d/aliases.fish
-source ~/.config/fish/conf.d/personal.fish
+source ~/.config/fish/aliases.fish

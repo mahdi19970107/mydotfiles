@@ -31,6 +31,7 @@ alias v='nvim'
 alias nv='nvim .'
 alias svv='sudo -E nvim -d'
 alias sv='sudo nvim'
+alias fish_conf='nvim ~/.config/fish/config.fish'
 
 
 # others
@@ -47,3 +48,10 @@ alias egrep='egrep --color=auto'
 alias cat='bat'
 alias fzf='fzf --preview "bat --style=numbers--line-range :500 {}"'
 alias exe='chmod +x'
+
+alias wallpick='bash ~/.config/fish/functions/preview-and-set-wall.sh'
+
+#######################
+#for termux in android#
+#######################
+
