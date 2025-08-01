@@ -1,20 +1,22 @@
 if status is-interactive
-    # Starship custom prompt
-    starship init fish | source
-
-    # Custom colours
-    #cat ~/.local/state/caelestia/sequences.txt 2> /dev/null
-
-    # For jumping between prompts in foot terminal
-    function mark_prompt_start --on-event fish_prompt
-        echo -en "\e]133;A\e\\"
+    if not set -q SSH_TTY; and not string match -q '/dev/tty*' (tty)
+        starship init fish | source
     end
 end
 
-fish_add_path /home/mehdi/.spicetify
+if type -q fastfetch
+    if not set -q SSH_TTY; and not string match -q '/dev/tty*' (tty)
+        fastfetch
+    end
+end
 
+if type -q zoxide
+    zoxide init fish | source
+end
 
-zoxide init fish | source
-thefuck --alias | source
-#####
+if type -q thefuck
+    thefuck --alias | source
+end
+
+# Load custom aliases
 source ~/.config/fish/aliases.fish
