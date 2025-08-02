@@ -1,0 +1,7 @@
+Git.Git
+Starship.Starship
+Neovim.Neovim
+OpenSSH.Client
+OpenSSH.Server
+LLVM.LLVM
+fish-shell.fish

@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+packages=$(<"{{ .chezmoi.sourceDir }}/packages_arch.txt")
+
+echo "📦 Installing packages for Arch..."
+sudo pacman -Syu --noconfirm $packages

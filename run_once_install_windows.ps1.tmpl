@@ -1,0 +1,7 @@
+$ErrorActionPreference = "Stop"
+$packages = Get-Content "{{ .chezmoi.sourceDir }}\packages_windows.txt"
+
+Write-Host "📦 Installing packages for Windows using winget..."
+foreach ($pkg in $packages) {
+    winget install -e --id $pkg -h --accept-package-agreements --accept-source-agreements
+}

@@ -1,0 +1,10 @@
+fish
+neovim
+starship
+openssh
+clang
+unzip
+ripgrep
+fd
+curl
+git
