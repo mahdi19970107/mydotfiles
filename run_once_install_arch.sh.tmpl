@@ -1,4 +1,9 @@
 #!/bin/bash
+
+# فقط روی Arch اجرا بشه
+[ "$(uname -o)" != "GNU/Linux" ] && exit 0
+[ ! -f /etc/arch-release ] && exit 0
+
 set -e
 
 packages=$(<"{{ .chezmoi.sourceDir }}/packages_arch.txt")

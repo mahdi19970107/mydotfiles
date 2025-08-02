@@ -1,4 +1,9 @@
 #!/data/data/com.termux/files/usr/bin/bash
+
+# فقط روی Termux اجرا بشه
+[ "$PREFIX" != "/data/data/com.termux/files/usr" ] && exit 0
+
+
 set -e
 
 packages=$(<"{{ .chezmoi.sourceDir }}/packages_termux.txt")
