@@ -1,0 +1,11 @@
+Host s24u
+    HostName 192.168.1.50
+    User u0_a355
+    Port 8022
+    IdentityFile ~/.ssh/id_multiusekey
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_multiusekey
+
